@@ -509,11 +509,31 @@ class InputSample(object):
         :param output_file: path to file
         """
 
-        examples_json = [example.to_dict() for example in dataset]
+        #examples_json = [example.to_dict() for example in dataset]
 
-        with open("{}".format(output_file), "w+", encoding="utf-8") as f:
-            json.dump(examples_json, f, ensure_ascii=False, indent=4)
+        #with open("{}".format(output_file), "w+", encoding="utf-8") as f:
+        #    json.dump(examples_json, f, ensure_ascii=False, indent=4)
 
+        def reduce_sample(sample):
+            return {
+                "full_text": sample.full_text,
+                "template_id": getattr(sample, "template_id", 0),  # Default to 0 if not exists
+                "spans": [
+                    {
+                        "entity_type": span.entity_type,
+                        "entity_value": span.entity_value,
+                        "start_position": span.start_position,
+                        "end_position": span.end_position
+                    }
+                    for span in sample.spans
+                ]
+            }
+
+        reduced_data = [reduce_sample(sample) for sample in dataset]
+
+        with open(str(output_file), "w+", encoding="utf-8") as f:
+            json.dump(reduced_data, f, ensure_ascii=False, indent=4)
+    
     def to_spacy_doc(self):
         doc = self.tokens
         spacy_spans = []

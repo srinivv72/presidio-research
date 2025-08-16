@@ -23,6 +23,8 @@ from presidio_evaluator.data_generator.faker_extensions import (
     AgeProvider,
     ReligionProvider,
     HospitalProvider,
+    MedicalProvider,
+    UsPassportProvider,
 )
 from presidio_evaluator.data_generator.faker_extensions.datasets import (
     load_fake_person_df,
@@ -40,6 +42,8 @@ presidio_additional_entity_providers = [
     PhoneNumberProviderNew,
     ReligionProvider,
     HospitalProvider,
+    MedicalProvider,
+    UsPassportProvider,
 ]
 
 
@@ -66,19 +70,24 @@ class PresidioSentenceFaker:
     ]
     ENTITY_TYPE_MAPPING = dict(
         person="PERSON",
+        gender="GENDER",
         ip_address="IP_ADDRESS",
         us_driver_license="US_DRIVER_LICENSE",
+        us_passport_number="US_PASSPORT",
+        us_passport="US_PASSPORT",
+        bank_number="BANK_NUMBER",
+        iban_code="IBAN_CODE",
         organization="ORGANIZATION",
         name_female="PERSON",
         address="STREET_ADDRESS",
         country="GPE",
         state="GPE",
         credit_card_number="CREDIT_CARD",
+        credit_card="CREDIT_CARD",
         city="GPE",
         street_name="STREET_ADDRESS",
         building_number="STREET_ADDRESS",
         name="PERSON",
-        iban="IBAN_CODE",
         last_name="PERSON",
         last_name_male="PERSON",
         last_name_female="PERSON",
@@ -86,9 +95,11 @@ class PresidioSentenceFaker:
         first_name_male="PERSON",
         first_name_female="PERSON",
         phone_number="PHONE_NUMBER",
-        url="DOMAIN_NAME",
+        url="URL",
         ssn="US_SSN",
+        us_ssn="US_SSN",
         email="EMAIL_ADDRESS",
+        email_address="EMAIL_ADDRESS",
         date_time="DATE_TIME",
         date_of_birth="DATE_TIME",
         day_of_week="DATE_TIME",
@@ -108,6 +119,21 @@ class PresidioSentenceFaker:
         zipcode="ZIP_CODE",
         state_abbr="GPE",
         age="AGE",
+        blood_pressure="BLOOD_PRESSURE",
+        symptom="SYMPTOM",
+        lab_result="LAB_RESULT",
+        lab_test="LAB_TEST",
+        medical_condition="MEDICAL_CONDITION",
+        drug="DRUG",
+        procedure="PROCEDURE",
+        hospital_name="HOSPITAL_NAME",
+        time="TIME",
+        patient_id="PATIENT_ID",
+        insurance_number="INSURANCE_NUMBER",
+        dosage="DOSAGE",
+        drug_frequency="DRUG_FREQUENCY",
+        duration="DURATION",
+        location="LOCATION",
     )
 
     def __init__(

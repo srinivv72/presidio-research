@@ -7,7 +7,9 @@ from .providers import (
     PhoneNumberProviderNew,
     AgeProvider,
     ReligionProvider,
-    HospitalProvider
+    HospitalProvider,
+    MedicalProvider,
+    UsPassportProvider
 )
 
 from .span_generator import SpanGenerator
@@ -24,5 +26,7 @@ __all__ = [
     "PhoneNumberProviderNew",
     "AgeProvider",
     "ReligionProvider",
-    "HospitalProvider"
+    "HospitalProvider",
+    "MedicalProvider",
+    "UsPassportProvider"
 ]
