@@ -31,6 +31,7 @@ The easiest way to get started is by reviewing the notebooks.
 conda create --name presidio python=3.12
 conda activate presidio
 pip install presidio-evaluator
+pip install -e .
 python -m spacy download en_core_web_sm # for tokenization
 python -m spacy download en_core_web_lg # for NER
 
