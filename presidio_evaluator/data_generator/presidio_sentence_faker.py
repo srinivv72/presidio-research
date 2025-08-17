@@ -126,6 +126,7 @@ class PresidioSentenceFaker:
         medical_condition="MEDICAL_CONDITION",
         drug="DRUG",
         procedure="PROCEDURE",
+        medical_procedure="MEDICAL_PROCEDURE",
         hospital_name="HOSPITAL_NAME",
         time="TIME",
         patient_id="PATIENT_ID",

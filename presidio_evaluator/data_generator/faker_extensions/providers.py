@@ -564,6 +564,22 @@ class MedicalProvider(BaseProvider):
         }
         
         return self.random_element(list(lab_tests.keys()))
+    
+    def random_boolean(self) -> bool:
+        """Return a random boolean value.
+        
+        Returns:
+            bool: Randomly returns True or False with equal probability
+        """
+        return self.generator.random.getrandbits(1) == 1
+
+    def medical_procedure(self):
+        """Generate either a lab test or medical procedure."""
+        # 50/50 chance to return either a lab test or procedure
+        if self.random_boolean():
+            return self.lab_test()
+        else:
+            return self.procedure()
 
     def insurance_number(self):
         # Example: 9-digit numbers, can be customized
