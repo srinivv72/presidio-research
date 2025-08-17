@@ -1,0 +1,172 @@
+sentence_templates = [
+    # Clinical Notes / Doctor's Notes
+    "Patient {{PERSON}} presented with {{SYMPTOM}} and was diagnosed with {{MEDICAL_CONDITION}}.",
+    "{{PERSON}} has a history of {{MEDICAL_CONDITION}} and is currently taking {{DRUG}}.",
+    "On {{DATE_TIME}}, {{PERSON}} reported {{SYMPTOM}} during the appointment.",
+    "Physical examination of {{PERSON}} revealed {{SYMPTOM}} and elevated blood pressure of {{BLOOD_PRESSURE}} mmHg.",
+    "Dr. {{PERSON}} recommended {{PROCEDURE}} for further evaluation of {{SYMPTOM}}.",
+    "Follow-up appointment for {{PERSON}} is scheduled on {{DATE_TIME}} at {{TIME}} at {{HOSPITAL_NAME}}.",
+    "Patient {{PERSON}} denies any known allergies. No adverse drug reactions reported.",
+    "Allergic reaction to {{DRUG}} was documented in {{PERSON}}'s chart.",
+    "Lab results for {{PERSON}}: {{LAB_RESULT}}.",
+    "Diagnosis: {{MEDICAL_CONDITION}}. Treatment plan includes {{DRUG}} and {{PROCEDURE}}.",
+    "{{PERSON}} was advised to monitor {{SYMPTOM}} and return if symptoms worsen.",
+
+    # Prescriptions
+    "Prescription for {{PERSON}}: {{DRUG}}, {{DOSAGE}} mg, to be taken {{FREQUENCY}} for {{DURATION}} days.",
+    "Please refill {{DRUG}} for {{PERSON}}. Current dosage: {{DOSAGE}} mg.",
+    "Discontinue {{DRUG}} due to adverse reaction in {{PERSON}}.",
+    
+    # Discharge Summaries
+    "{{PERSON}} was admitted for {{MEDICAL_CONDITION}} and underwent {{PROCEDURE}} on {{DATE_TIME}}.",
+    "Discharge medications for {{PERSON}} include {{DRUG}} and {{DRUG}}.",
+    "Upon discharge, {{PERSON}} was instructed to follow up with Dr. {{PERSON}} at {{HOSPITAL_NAME}}.",
+    
+    # Lab Reports
+    "CBC for {{PERSON}} shows {{LAB_RESULT}}.",
+    "Blood glucose level for {{PERSON}} is {{LAB_RESULT}}.",
+    "MRI results for {{PERSON}} indicate {{LAB_RESULT}}.",
+    
+    # Appointment Reminders
+    "Reminder: {{PERSON}} has an appointment with Dr. {{PERSON}} at {{HOSPITAL_NAME}} on {{DATE_TIME}}.",
+    "Appointment for {{PERSON}} confirmed at {{HOSPITAL_NAME}} on {{DATE_TIME}} at {{TIME}}.",
+    
+    # Insurance/Administrative
+    "Insurance number {{INSURANCE_NUMBER}} for {{PERSON}} was verified.",
+    "Patient ID: {{PATIENT_ID}}. Please update medical records accordingly.",
+    
+    # Miscellaneous
+    "Emergency contact for {{PERSON}}: {{PHONE_NUMBER}}.",
+    "Address on file for {{PERSON}}: {{LOCATION}}.",
+    "Next of kin for {{PERSON}}: {{PERSON}}."
+]
+
+
+sentence_templates = [
+    "My name is {{PERSON}}, I am currently {{AGE}} years old, and I’ve been living in {{LOCATION}} since {{DATE_TIME}}.",
+    "You can reach out to {{PERSON}} at their email address {{EMAIL_ADDRESS}} or visit their personal website at {{URL}} for more details.",
+    "The individual named {{PERSON}}, aged {{AGE}}, registered an account on {{URL}} on {{DATE_TIME}} while residing in {{LOCATION}}.", 
+    "As per our records, {{PERSON}} submitted their personal details including US Social Security Number {{US_SSN}} and email {{EMAIL_ADDRESS}}.",
+    "{{PERSON}}, who turned {{AGE}} on {{DATE_TIME}}, confirmed their residence as {{LOCATION}} and provided a valid credit card number: {{CREDIT_CARD}}.",
+    "For security purposes, {{PERSON}}’s profile includes their full name, date of birth {{DATE_TIME}}, US_SSN {{US_SSN}}, and contact email {{EMAIL_ADDRESS}}.",
+    "The card ending in {{CREDIT_CARD}} was used by {{PERSON}} from {{LOCATION}} to make an online purchase at {{URL}} on {{DATE_TIME}}.",
+    "On {{DATE_TIME}}, {{PERSON}} (age {{AGE}}) submitted a support request via {{EMAIL_ADDRESS}}, mentioning unusual activity on {{URL}}.",
+    "{{PERSON}}, originally from {{LOCATION}}, provided the US Social Security Number {{US_SSN}} and updated their billing address on {{DATE_TIME}}.",
+    "According to our logs, {{PERSON}} accessed our system from IP registered to {{LOCATION}} using the email {{EMAIL_ADDRESS}} and credit card {{CREDIT_CARD}}.",
+    "The contact details for {{PERSON}} include email {{EMAIL_ADDRESS}}, website {{URL}}, and their current city {{LOCATION}}.",
+    "As part of identity verification, {{PERSON}} shared their US_SSN {{US_SSN}}, credit card {{CREDIT_CARD}}, and confirmed their date of birth as {{DATE_TIME}}.",    
+    "An automated alert was triggered when {{PERSON}}, age {{AGE}}, logged in from {{LOCATION}} using {{EMAIL_ADDRESS}} and navigated to {{URL}} on {{DATE_TIME}}.",
+    "The cardholder {{PERSON}} used card {{CREDIT_CARD}} to complete a high-value transaction on {{URL}} while staying in {{LOCATION}} on {{DATE_TIME}}.",
+    "A suspicious login was recorded for user {{PERSON}} (US_SSN: {{US_SSN}}, Age: {{AGE}}) from {{LOCATION}} at {{DATE_TIME}} via {{URL}}.",
+    "We emailed {{PERSON}} at {{EMAIL_ADDRESS}} regarding a failed transaction attempt using card {{CREDIT_CARD}} on {{DATE_TIME}} at {{URL}}.",
+    "New account creation: {{PERSON}}, born on {{DATE_TIME}}, living in {{LOCATION}}, submitted identity verification using US_SSN {{US_SSN}} and contact {{EMAIL_ADDRESS}}."
+    "The person identified as {{PERSON}} has accessed our secure platform using the URL {{URL}} and email {{EMAIL_ADDRESS}}, while confirming their address as {{LOCATION}}."
+    "{{PERSON}}, with email {{EMAIL_ADDRESS}} and SSN {{US_SSN}}, contacted us on {{DATE_TIME}} to report misuse of credit card {{CREDIT_CARD}}."
+    "Support ticket raised by {{PERSON}} ({{AGE}} y/o, {{LOCATION}}) using {{EMAIL_ADDRESS}} to resolve login issue on {{URL}} at {{DATE_TIME}}.",
+    "{{PERSON}}, with email {{EMAIL_ADDRESS}} and SSN {{US_SSN}}, contacted us on {{DATE_TIME}} to report misuse of credit card {{CREDIT_CARD}}."
+    "Support ticket raised by {{PERSON}} ({{AGE}} y/o, {{LOCATION}}) using {{EMAIL_ADDRESS}} to resolve login issue on {{URL}} at {{DATE_TIME}}.",
+
+]
+
+
+sentence_templates = [
+    "{{PERSON}} identifies as {{GENDER}}.",
+    "The patient, {{PERSON}}, is {{GENDER}}.",
+    "According to the records, {{PERSON}}'s gender is {{GENDER}}.",
+    "{{PERSON}} prefers to be addressed as a {{GENDER}} individual.",
+    "Please mark {{PERSON}} as {{GENDER}} in the database.",
+    "{{PERSON}} reported their gender as {{GENDER}} during registration.",
+    "The form lists {{PERSON}}'s gender as {{GENDER}}.",
+    "For the study, {{PERSON}} was categorized as {{GENDER}}",
+]
+sentence_templates = [
+    "On {{DATE_TIME}}, {{PERSON}} (age {{AGE}}, gender {{GENDER}}) applied for a credit card ending with {{CREDIT_CARD}} using SSN {{US_SSN}}.",
+    "Please verify the transaction made by {{PERSON}} ({{GENDER}}, {{AGE}} years old) on {{DATE_TIME}} using card number {{CREDIT_CARD}}."  ,
+    "The account for {{PERSON}} (SSN: {{US_SSN}}, gender: {{GENDER}}) was created on {{DATE_TIME}}. For more details, visit {{URL}}.",
+    "On {{DATE_TIME}}, {{PERSON}} (age {{AGE}}) updated their profile to reflect gender as {{GENDER}} and linked credit card {{CREDIT_CARD}}.",
+    "{{PERSON}} (SSN: {{US_SSN}}) accessed the secure portal at {{URL}} on {{DATE_TIME}} using their credit card {{CREDIT_CARD}}.",
+    "A new user, {{PERSON}}, gender {{GENDER}}, age {{AGE}}, registered on {{DATE_TIME}} with SSN {{US_SSN}} and email {{EMAIL}}.",
+    "The payment of $100 was made by {{PERSON}} (age {{AGE}}, gender {{GENDER}}) on {{DATE_TIME}} using credit card {{CREDIT_CARD}}. Confirmation sent to {{EMAIL}}.",
+    "For account recovery, {{PERSON}} (SSN: {{US_SSN}}, gender: {{GENDER}}) was asked to visit {{URL}} and enter their birth date and credit card {{CREDIT_CARD}}.",
+    "On {{DATE_TIME}}, {{PERSON}} ({{AGE}} years old) submitted their application, providing SSN {{US_SSN}}, credit card {{CREDIT_CARD}}, and contact email {{EMAIL}}.",
+    "The profile for {{PERSON}} (gender: {{GENDER}}, age: {{AGE}}, SSN: {{US_SSN}}) was last updated on {{DATE_TIME}}. Please review the changes at {{URL}}.",
+]
+
+
+sentence_templates = [
+    "Patient {{PERSON}} ({{AGE}} years old, {{GENDER}}) completed their registration on {{DATE_TIME}}. Contact: {{EMAIL_ADDRESS}}. SSN: {{US_SSN}}. Billing on file ends with {{CREDIT_CARD|last4}}."
+    "Order confirmed for {{PERSON}} ({{AGE}}) on {{DATE_TIME}}. Receipt sent to {{EMAIL_ADDRESS}}. Shipping to {{LOCATION}}. Payment processed with card ending in {{CREDIT_CARD|last4}}. Order details at {{URL}}."
+    "New account opened for {{PERSON}} ({{AGE}}, {{GENDER}}) on {{DATE_TIME}}. SSN ending in {{US_SSN|last4}}. Primary contact: {{EMAIL_ADDRESS}}. Initial deposit from card {{CREDIT_CARD}}. Nearest branch: {{LOCATION}}."
+    "{{PERSON}} ({{AGE}}, {{GENDER}}) had an appointment on {{DATE_TIME}}. Patient portal login sent to {{EMAIL_ADDRESS}}. Insurance verified with SSN {{US_SSN}}. Next visit scheduled at our {{LOCATION}} location. Secure message sent via {{URL}}."
+    "Booking confirmed for {{PERSON}} ({{AGE}}) on {{DATE_TIME}}. E-ticket sent to {{EMAIL_ADDRESS}}. Payment processed with card ending in {{CREDIT_CARD|last4}}. Pickup at {{LOCATION}}. View itinerary at {{URL}}."
+    "Application received from {{PERSON}} ({{AGE}}, {{GENDER}}) on {{DATE_TIME}}. Contact: {{EMAIL_ADDRESS}}. SSN provided for background check: {{US_SSN}}. Current location: {{LOCATION}}. Resume available at {{URL}}."
+    "New {{AGE}}-year-old {{GENDER}} member {{PERSON}} joined on {{DATE_TIME}}. Welcome email sent to {{EMAIL_ADDRESS}}. Membership card will be mailed to {{LOCATION}}. Payment method: {{CREDIT_CARD}}. Access member portal at {{URL}}."
+    "Claim submitted by {{PERSON}} ({{AGE}}, {{GENDER}}) on {{DATE_TIME}}. Policyholder SSN: {{US_SSN}}. Correspondence sent to {{EMAIL_ADDRESS}}. Incident location: {{LOCATION}}. Payment processed to card ending in {{CREDIT_CARD|last4}}."
+    "Subscription activated for {{PERSON}} ({{AGE}}) on {{DATE_TIME}}. Account email: {{EMAIL_ADDRESS}}. Billing: {{CREDIT_CARD}}. Location: {{LOCATION}}. Access your account at {{URL}}. For security, last 4 of SSN required: {{US_SSN|last4}}."
+    "Application #{{random_number}} for {{PERSON}} ({{AGE}}, {{GENDER}}) received on {{DATE_TIME}}. SSN verified: {{US_SSN}}. Notifications will be sent to {{EMAIL_ADDRESS}}. Service center: {{LOCATION}}. Check status at {{URL}}."
+    "Alert: Suspicious transaction on {{DATE_TIME}} for card ending {{CREDIT_CARD|last4}}. Cardholder {{PERSON}} ({{AGE}}) was in {{LOCATION}}. If unauthorized, contact us at {{URL}} or verify at {{EMAIL_ADDRESS}}. Ref# {{random_number}}."
+    "{{PERSON}} ({{AGE}} years, {{GENDER}}), SSN {{US_SSN}}, seen on {{DATE_TIME}}. Records updated and notification sent to {{EMAIL_ADDRESS}}. Next appointment at our {{LOCATION}} office. Secure portal: {{URL}}."
+    "{{PERSON}} ({{AGE}}, {{GENDER}}) registered on {{DATE_TIME}}. Confirmation sent to {{EMAIL_ADDRESS}}. Event location: {{LOCATION}}. Payment method: {{CREDIT_CARD}}. Event details at {{URL}}. Emergency contact SSN: {{US_SSN|last4}}."
+    "Ticket #{{random_number}}: {{PERSON}} ({{AGE}}) contacted support on {{DATE_TIME}}. Verified email: {{EMAIL_ADDRESS}}. Account verified with last 4 SSN: {{US_SSN|last4}}. Billing address: {{LOCATION}}. Reference URL: {{URL}}."
+    "Background check initiated for {{PERSON}} ({{AGE}}, {{GENDER}}) on {{DATE_TIME}}. SSN: {{US_SSN}}. Results will be sent to {{EMAIL_ADDRESS}}. Current residence: {{LOCATION}}. Payment processed with {{CREDIT_CARD}}. Access report at {{URL}}."
+    "Reservation confirmed for {{PERSON}} ({{AGE}}) at {{LOCATION}} on {{DATE_TIME}}. Confirmation sent to {{EMAIL_ADDRESS}}. Guaranteed by card {{CREDIT_CARD}}. Check-in requires ID and last 4 SSN: {{US_SSN|last4}}. View booking at {{URL}}."
+    "{{PERSON}} ({{AGE}}, {{GENDER}}) enrolled on {{DATE_TIME}}. Student ID created using SSN {{US_SSN}}. Campus email: {{EMAIL_ADDRESS}}. Campus location: {{LOCATION}}. Tuition payment method: {{CREDIT_CARD}}. Portal: {{URL}}."
+    "Rental agreement #{{random_number}} for {{PERSON}} ({{AGE}}) on {{DATE_TIME}}. Driver's license verified with SSN {{US_SSN}}. Pickup: {{LOCATION}}. Confirmation sent to {{EMAIL_ADDRESS}}. Secured with card {{CREDIT_CARD}}. Details at {{URL}}."
+    "Offer extended to {{PERSON}} ({{AGE}}, {{GENDER}}) on {{DATE_TIME}}. Employment verification completed via SSN {{US_SSN}}. Offer letter sent to {{EMAIL_ADDRESS}}. Office location: {{LOCATION}}. Sign documents at {{URL}}. Direct deposit form requires bank details and last 4 of SSN."
+    "New payee {{PERSON}} ({{AGE}}) added on {{DATE_TIME}}. Verification code sent to {{EMAIL_ADDRESS}}. Account linked to {{CREDIT_CARD}}. Mailing address: {{LOCATION}}. For security, please verify last 4 SSN: {{US_SSN|last4}}. Manage payees at {{URL}}."
+]
+
+sentence_templates = [
+    "Patient {{PERSON}} ({{AGE}} years old, {{GENDER}}) completed their registration on {{DATE_TIME}}. Contact: {{EMAIL_ADDRESS}}. SSN: {{US_SSN}}. Billing on file ends with {{CREDIT_CARD}}."
+    "Order confirmed for {{PERSON}} ({{AGE}}) on {{DATE_TIME}}. Receipt sent to {{EMAIL_ADDRESS}}. Shipping to {{LOCATION}}. Payment processed with card {{CREDIT_CARD}}. Order details at {{URL}}."
+    "New account opened for {{PERSON}} ({{AGE}}, {{GENDER}}) on {{DATE_TIME}}. SSN {{US_SSN}}. Primary contact: {{EMAIL_ADDRESS}}. Initial deposit from card {{CREDIT_CARD}}. Nearest branch: {{LOCATION}}."
+    "{{PERSON}} ({{AGE}}, {{GENDER}}) had an appointment on {{DATE_TIME}}. Patient portal login sent to {{EMAIL_ADDRESS}}. Insurance verified with SSN {{US_SSN}}. Next visit scheduled at our {{LOCATION}} location. Secure message sent via {{URL}}."
+    "Booking confirmed for {{PERSON}} ({{AGE}}) on {{DATE_TIME}}. E-ticket sent to {{EMAIL_ADDRESS}}. Payment processed with card {{CREDIT_CARD}}. Pickup at {{LOCATION}}. View itinerary at {{URL}}."
+    "Application received from {{PERSON}} ({{AGE}}, {{GENDER}}) on {{DATE_TIME}}. Contact: {{EMAIL_ADDRESS}}. SSN provided for background check: {{US_SSN}}. Current location: {{LOCATION}}. Resume available at {{URL}}."
+    "New {{AGE}}-year-old {{GENDER}} member {{PERSON}} joined on {{DATE_TIME}}. Welcome email sent to {{EMAIL_ADDRESS}}. Membership card will be mailed to {{LOCATION}}. Payment method: {{CREDIT_CARD}}. Access member portal at {{URL}}."
+    "Claim submitted by {{PERSON}} ({{AGE}}, {{GENDER}}) on {{DATE_TIME}}. Policyholder SSN: {{US_SSN}}. Correspondence sent to {{EMAIL_ADDRESS}}. Incident location: {{LOCATION}}. Payment processed to card {{CREDIT_CARD}}."
+    "Subscription activated for {{PERSON}} ({{AGE}}) on {{DATE_TIME}}. Account email: {{EMAIL_ADDRESS}}. Billing: {{CREDIT_CARD}}. Location: {{LOCATION}}. Access your account at {{URL}}. For security, SSN required: {{US_SSN}}."
+    "Application for {{PERSON}} ({{AGE}}, {{GENDER}}) received on {{DATE_TIME}}. SSN verified: {{US_SSN}}. Notifications will be sent to {{EMAIL_ADDRESS}}. Service center: {{LOCATION}}. Check status at {{URL}}."
+    "Alert: Suspicious transaction on {{DATE_TIME}} for card {{CREDIT_CARD}}. Cardholder {{PERSON}} ({{AGE}}) was in {{LOCATION}}. If unauthorized, contact us at {{URL}} or verify at {{EMAIL_ADDRESS}}."
+    "{{PERSON}} ({{AGE}} years, {{GENDER}}), SSN {{US_SSN}}, seen on {{DATE_TIME}}. Records updated and notification sent to {{EMAIL_ADDRESS}}. Next appointment at our {{LOCATION}} office. Secure portal: {{URL}}."
+    "{{PERSON}} ({{AGE}}, {{GENDER}}) registered on {{DATE_TIME}}. Confirmation sent to {{EMAIL_ADDRESS}}. Event location: {{LOCATION}}. Payment method: {{CREDIT_CARD}}. Event details at {{URL}}. Emergency contact SSN: {{US_SSN}}."
+    "Ticket: {{PERSON}} ({{AGE}}) contacted support on {{DATE_TIME}}. Verified email: {{EMAIL_ADDRESS}}. Account verified with SSN: {{US_SSN}}. Billing address: {{LOCATION}}. Reference URL: {{URL}}."
+    "Background check initiated for {{PERSON}} ({{AGE}}, {{GENDER}}) on {{DATE_TIME}}. SSN: {{US_SSN}}. Results will be sent to {{EMAIL_ADDRESS}}. Current residence: {{LOCATION}}. Payment processed with {{CREDIT_CARD}}. Access report at {{URL}}."
+    "Reservation confirmed for {{PERSON}} ({{AGE}}) at {{LOCATION}} on {{DATE_TIME}}. Confirmation sent to {{EMAIL_ADDRESS}}. Guaranteed by card {{CREDIT_CARD}}. Check-in requires ID and SSN: {{US_SSN}}. View booking at {{URL}}."
+    "{{PERSON}} ({{AGE}}, {{GENDER}}) enrolled on {{DATE_TIME}}. Student ID created using SSN {{US_SSN}}. Campus email: {{EMAIL_ADDRESS}}. Campus location: {{LOCATION}}. Tuition payment method: {{CREDIT_CARD}}. Portal: {{URL}}."
+    "Rental agreement for {{PERSON}} ({{AGE}}) on {{DATE_TIME}}. Driver's license verified with SSN {{US_SSN}}. Pickup: {{LOCATION}}. Confirmation sent to {{EMAIL_ADDRESS}}. Secured with card {{CREDIT_CARD}}. Details at {{URL}}."
+    "Offer extended to {{PERSON}} ({{AGE}}, {{GENDER}}) on {{DATE_TIME}}. Employment verification completed via SSN {{US_SSN}}. Offer letter sent to {{EMAIL_ADDRESS}}. Office location: {{LOCATION}}. Sign documents at {{URL}}. Direct deposit form requires bank details and last 4 of SSN."
+    "New payee {{PERSON}} ({{AGE}}) added on {{DATE_TIME}}. Verification code sent to {{EMAIL_ADDRESS}}. Account linked to {{CREDIT_CARD}}. Mailing address: {{LOCATION}}. For security, please verify SSN: {{US_SSN}}. Manage payees at {{URL}}."
+]
+
+
+
+
+sentence_templates = [
+"During the patient intake process at {ORGANIZATION} on {DATE_TIME}, {PERSON}, a {AGE}-year-old individual who identifies as {GENDER}, provided their contact number as {PHONE_NUMBER} and their social security number {US_SSN} for insurance verification purposes, while their emergency contact information was also recorded in our secure database.",
+"The international travel authorization form submitted by {PERSON} on {DATE_TIME} included their passport number {US_PASSPORT}, which was verified against their driver's license {US_DRIVER_LICENSE} and the credit card {CREDIT_CARD} used for the booking, with all documentation stored in our system for future reference.",
+"As part of the employment verification process at {ORGANIZATION}, {PERSON} submitted multiple forms of identification including their social security card ending in {US_SSN}, a copy of their driver's license {US_DRIVER_LICENSE}, and their passport {US_PASSPORT}, all of which were verified by our HR department on {DATE_TIME}.",
+"The financial aid application received from {PERSON}, a {AGE}-year-old {GENDER} residing at {LOCATION}, included their social security number {US_SSN} and was submitted through our secure portal at {URL} on {DATE_TIME}, with follow-up communications to be sent to their email address {EMAIL_ADDRESS}.",
+"During the recent security breach investigation at {ORGANIZATION}, it was discovered that unauthorized access was gained using credentials linked to {PERSON}'s account, which was associated with the phone number {PHONE_NUMBER} and the credit card ending in {CREDIT_CARD}, with suspicious activity first detected on {DATE_TIME}.",
+"The rental agreement signed on {DATE_TIME} between {ORGANIZATION} and {PERSON}, a {AGE}-year-old {GENDER}, included the lessee's driver's license number {US_DRIVER_LICENSE}, contact number {PHONE_NUMBER}, and emergency contact information, with monthly payments to be automatically charged to the credit card {CREDIT_CARD}.",
+"The international conference registration for {PERSON} was completed on {DATE_TIME}, with their passport number {US_PASSPORT} recorded for visa processing and their contact details including {EMAIL_ADDRESS} and {PHONE_NUMBER} added to the attendee database, while their accommodation at {LOCATION} was confirmed via the confirmation sent to their registered email.",
+"The background check authorization form submitted by {PERSON} on {DATE_TIME} included their full social security number {US_SSN}, date of birth {DATE_TIME}, and current address at {LOCATION}, with all information to be processed by our secure third-party verification service at {URL} within the next 3-5 business days.",
+"The medical records transfer request initiated by {PERSON}, a {AGE}-year-old {GENDER}, on {DATE_TIME} required verification of their identity using their driver's license {US_DRIVER_LICENSE} and the last four digits of their social security number {US_SSN}, with all documentation to be sent to the healthcare provider at {LOCATION}.",
+"The online purchase made on {DATE_TIME} by {PERSON} from {ORGANIZATION}'s website at {URL} included their credit card information {CREDIT_CARD}, shipping address at {LOCATION}, and contact number {PHONE_NUMBER}, with an order confirmation and tracking details sent to their email address {EMAIL_ADDRESS}.",
+]
+
+
+PERSON, AGE, GENDER, PHONE_NUMBER, EMAIL_ADDRESS, US_SSN, US_PASSPORT, US_DRIVER_LICENSE, BANK_NUMBER, IBAN_CODE, ORGANIZATION, CREDIT_CARD, DATE_TIME, URL, LOCATION, MEDICAL_CONDITION, LAB_TEST, DRUG, DOSAGE, DRUG_FREQUENCY, PROCEDURE
+
+sentence_templates = [
+"During the comprehensive health assessment conducted on {DATE_TIME}, {PERSON}, a {AGE}-year-old {GENDER} with a history of {MEDICAL_CONDITION}, reported experiencing persistent symptoms that required further investigation through {LAB_TEST}, while the attending physician reviewed the patient's contact information including {PHONE_NUMBER} and {EMAIL_ADDRESS} for follow-up communications.",
+"Following the diagnostic evaluation, the medical team prescribed {DRUG} at a dosage of {DOSAGE} to be taken {DRUG_FREQUENCY}, along with scheduling a follow-up {PROCEDURE} at our {LOCATION} facility on {DATE_TIME} to monitor the patient's response to the treatment plan.",
+"The insurance claim for {PERSON} was processed on {DATE_TIME} using credit card ending in {CREDIT_CARD}, with the total amount being charged to the account linked to bank number {BANK_NUMBER}, while the international payment of $1,500.00 was successfully transferred to IBAN {IBAN_CODE} for the medical services rendered at our {LOCATION} clinic.",
+"During the registration process at {ORGANIZATION} on {DATE_TIME}, {PERSON} provided multiple forms of identification including US passport number {US_PASSPORT}, state driver's license {US_DRIVER_LICENSE}, and social security number {US_SSN}, all of which were verified through our secure authentication system before proceeding with the scheduled {PROCEDURE}.",
+"The electronic health record for {PERSON}, a {AGE}-year-old {GENDER}, indicates a diagnosis of {MEDICAL_CONDITION} with recent {LAB_TEST} results showing significant improvement since the initiation of {DRUG} therapy at {DOSAGE} administered {DRUG_FREQUENCY}, while the patient's contact details including {PHONE_NUMBER} and {EMAIL_ADDRESS} were confirmed during the last visit on {DATE_TIME} at our {LOCATION} medical center.",
+"The detailed invoice generated on {DATE_TIME} for services rendered to {PERSON} includes charges for the recent {PROCEDURE} and {LAB_TEST}, with payment authorized through credit card {CREDIT_CARD} and a portion of the amount being directly billed to the patient's bank account {BANK_NUMBER}, while the remaining balance was covered by an international wire transfer to IBAN {IBAN_CODE}.",
+"Upon admission to {ORGANIZATION} on {DATE_TIME}, {PERSON}, a {AGE}-year-old {GENDER} with a medical history significant for {MEDICAL_CONDITION}, underwent an initial evaluation that included {LAB_TEST}, followed by the administration of {DRUG} at {DOSAGE} to be taken {DRUG_FREQUENCY}, while the patient's emergency contact information including {PHONE_NUMBER} was verified by the nursing staff during the admission process.",
+"The medical report dated {DATE_TIME} for {PERSON} outlines the successful completion of {PROCEDURE} performed at our {LOCATION} facility, with prescribed medication including {DRUG} at {DOSAGE} to be taken {DRUG_FREQUENCY}, while the patient's identification documents including US passport {US_PASSPORT} and driver's license {US_DRIVER_LICENSE} were verified prior to the procedure to ensure accurate medical record-keeping and billing processes.",
+"During the follow-up consultation on {DATE_TIME}, {PERSON}, a {AGE}-year-old {GENDER} being treated for {MEDICAL_CONDITION}, reported improved symptoms following the prescribed regimen of {DRUG} at {DOSAGE} taken {DRUG_FREQUENCY}, while the most recent {LAB_TEST} results showed positive response to treatment, and the patient's contact information including {PHONE_NUMBER} was updated in our system for future communications.",
+"The multidisciplinary treatment plan developed for {PERSON} on {DATE_TIME} includes ongoing management of {MEDICAL_CONDITION} through regular {LAB_TEST} monitoring and administration of {DRUG} at {DOSAGE} to be taken {DRUG_FREQUENCY}, with scheduled {PROCEDURE} to be performed at our {LOCATION} facility, while all financial transactions are processed through the patient's credit card {CREDIT_CARD} and verified bank account {BANK_NUMBER} for seamless billing and record-keeping purposes.",
+]
