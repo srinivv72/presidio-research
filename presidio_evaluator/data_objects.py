@@ -534,6 +534,34 @@ class InputSample(object):
         with open(str(output_file), "w+", encoding="utf-8") as f:
             json.dump(reduced_data, f, ensure_ascii=False, indent=4)
     
+    @staticmethod
+    def structured_data_to_json(dataset: List, output_file: Union[str, Path]):
+        """
+        Save the InputSample dataset to json.
+        :param dataset: list of InputSample objects
+        :param output_file: path to file
+        """
+
+        def reduce_sample(sample):
+            return {
+                "full_text": [data for data in sample["full_text"]],
+                "spans": [
+                    {
+                        "entity_type": span["entity_type"],
+                        "entity_value": span["entity_value"],
+                        "start_position": span["start_position"],
+                        "end_position": span["end_position"]
+                    }
+                    for span in sample["spans"]
+                ]
+            }
+
+        reduced_data = [reduce_sample(sample) for sample in dataset]
+
+        with open(str(output_file), "w+", encoding="utf-8") as f:
+            json.dump(reduced_data, f, ensure_ascii=False, indent=4)
+
+
     def to_spacy_doc(self):
         doc = self.tokens
         spacy_spans = []

@@ -3,7 +3,6 @@ sentence_templates = [
     "Patient {{PERSON}} presented with {{SYMPTOM}} and was diagnosed with {{MEDICAL_CONDITION}}.",
     "{{PERSON}} has a history of {{MEDICAL_CONDITION}} and is currently taking {{DRUG}}.",
     "On {{DATE_TIME}}, {{PERSON}} reported {{SYMPTOM}} during the appointment.",
-    "Physical examination of {{PERSON}} revealed {{SYMPTOM}} and elevated blood pressure of {{BLOOD_PRESSURE}} mmHg.",
     "Dr. {{PERSON}} recommended {{PROCEDURE}} for further evaluation of {{SYMPTOM}}.",
     "Follow-up appointment for {{PERSON}} is scheduled on {{DATE_TIME}} at {{TIME}} at {{HOSPITAL_NAME}}.",
     "Patient {{PERSON}} denies any known allergies. No adverse drug reactions reported.",
@@ -13,8 +12,8 @@ sentence_templates = [
     "{{PERSON}} was advised to monitor {{SYMPTOM}} and return if symptoms worsen.",
 
     # Prescriptions
-    "Prescription for {{PERSON}}: {{DRUG}}, {{DOSAGE}} mg, to be taken {{FREQUENCY}} for {{DURATION}} days.",
-    "Please refill {{DRUG}} for {{PERSON}}. Current dosage: {{DOSAGE}} mg.",
+    "Prescription for {{PERSON}}: {{DRUG}}, {{DOSAGE}}, to be taken {{FREQUENCY}} for {{DURATION}} days.",
+    "Please refill {{DRUG}} for {{PERSON}}. Current dosage: {{DOSAGE}}.",
     "Discontinue {{DRUG}} due to adverse reaction in {{PERSON}}.",
     
     # Discharge Summaries
@@ -169,4 +168,95 @@ sentence_templates = [
 "The medical report dated {DATE_TIME} for {PERSON} outlines the successful completion of {PROCEDURE} performed at our {LOCATION} facility, with prescribed medication including {DRUG} at {DOSAGE} to be taken {DRUG_FREQUENCY}, while the patient's identification documents including US passport {US_PASSPORT} and driver's license {US_DRIVER_LICENSE} were verified prior to the procedure to ensure accurate medical record-keeping and billing processes.",
 "During the follow-up consultation on {DATE_TIME}, {PERSON}, a {AGE}-year-old {GENDER} being treated for {MEDICAL_CONDITION}, reported improved symptoms following the prescribed regimen of {DRUG} at {DOSAGE} taken {DRUG_FREQUENCY}, while the most recent {LAB_TEST} results showed positive response to treatment, and the patient's contact information including {PHONE_NUMBER} was updated in our system for future communications.",
 "The multidisciplinary treatment plan developed for {PERSON} on {DATE_TIME} includes ongoing management of {MEDICAL_CONDITION} through regular {LAB_TEST} monitoring and administration of {DRUG} at {DOSAGE} to be taken {DRUG_FREQUENCY}, with scheduled {PROCEDURE} to be performed at our {LOCATION} facility, while all financial transactions are processed through the patient's credit card {CREDIT_CARD} and verified bank account {BANK_NUMBER} for seamless billing and record-keeping purposes.",
+]
+
+
+sentence_templates = [
+    "The patient, {{PERSON}}, is scheduled for a {{MEDICAL_PROCEDURE}} on {{DATE_TIME}}. Contact through {{EMAIL_ADDRESS}}",
+    "Please send the invoice to {{EMAIL_ADDRESS}} for the services rendered to {{PERSON}}. You can also find it in {{URL}}",
+    "The prescription for {{DRUG}} has been approved for {{PERSON}} ({{AGE}} years old).",
+    "Emergency contact for {{PERSON}} is {{PHONE_NUMBER}} and email is {{EMAIL_ADDRESS}}.",
+    "The {{LOCATION}} clinic will contact {{PERSON}} regarding their {{MEDICAL_PROCEDURE}} through phone {{PHONE_NUMBER}}.",
+    "A new account has been created for {{PERSON}} with the email {{EMAIL_ADDRESS}}. The information is available in {{URL}}",
+    "The credit card ending in {{CREDIT_CARD}} will be charged for the services provided to {{PERSON}}.",
+    "Please verify the identity of {{PERSON}} using their US passport number {{US_PASSPORT}} and ssn {{US_SSN}}",
+    "The follow-up appointment for {{PERSON}} is scheduled at {{LOCATION}} on {{DATE_TIME}}. It is also sent to his email {{EMAIL_ADDRESS}}",
+    "The dosage of {{DRUG}} for {{PERSON}} is set to {{DOSAGE}} mg, to be taken daily. He should visit the hospital next on {{DATE_TIME}}"
+]
+
+sentence_templates = [
+    "During the comprehensive health assessment conducted on {DATE_TIME}, {PERSON}, a {AGE}-year-old {GENDER} with a history of {MEDICAL_CONDITION}, reported experiencing persistent symptoms that required further investigation through {MEDICAL_PROCEDURE}, while the attending physician reviewed the patient's contact information including {PHONE_NUMBER} and {EMAIL_ADDRESS} for follow-up communications.",
+    "Following the diagnostic evaluation, the medical team prescribed {DRUG} at a dosage of {DOSAGE} to be taken {DRUG_FREQUENCY}, along with scheduling a follow-up {MEDICAL_PROCEDURE} at our {LOCATION} facility on {DATE_TIME} to monitor the patient's response to the treatment plan.",
+    "The insurance claim for {PERSON} was processed on {DATE_TIME} using credit card ending in {CREDIT_CARD}, with the total amount being charged to the account linked to bank number {BANK_NUMBER}, while the international payment of $1,500.00 was successfully transferred to IBAN {IBAN_CODE} for the medical services rendered at our {LOCATION} clinic.",
+    "During the registration process at {ORGANIZATION} on {DATE_TIME}, {PERSON} provided multiple forms of identification including US passport number {US_PASSPORT}, state driver's license {US_DRIVER_LICENSE}, and social security number {US_SSN}, all of which were verified through our secure authentication system before proceeding with the scheduled {MEDICAL_PROCEDURE}.",
+    "The electronic health record for {PERSON}, a {AGE}-year-old {GENDER}, indicates a diagnosis of {MEDICAL_CONDITION} with recent {MEDICAL_PROCEDURE} results showing significant improvement since the initiation of {DRUG} therapy at {DOSAGE} administered {DRUG_FREQUENCY}, while the patient's contact details including {PHONE_NUMBER} and {EMAIL_ADDRESS} were confirmed during the last visit on {DATE_TIME} at our {LOCATION} medical center.",
+    "The detailed invoice generated on {DATE_TIME} for services rendered to {PERSON} includes charges for the recent {MEDICAL_PROCEDURE} and {MEDICAL_PROCEDURE}, with payment authorized through credit card {CREDIT_CARD} and a portion of the amount being directly billed to the patient's bank account {BANK_NUMBER}, while the remaining balance was covered by an international wire transfer to IBAN {IBAN_CODE}.",
+    "Upon admission to {ORGANIZATION} on {DATE_TIME}, {PERSON}, a {AGE}-year-old {GENDER} with a medical history significant for {MEDICAL_CONDITION}, underwent an initial evaluation that included {MEDICAL_PROCEDURE}, followed by the administration of {DRUG} at {DOSAGE} to be taken {DRUG_FREQUENCY}, while the patient's emergency contact information including {PHONE_NUMBER} was verified by the nursing staff during the admission process.",
+    "The medical report dated {DATE_TIME} for {PERSON} outlines the successful completion of {MEDICAL_PROCEDURE} performed at our {LOCATION} facility, with prescribed medication including {DRUG} at {DOSAGE} to be taken {DRUG_FREQUENCY}, while the patient's identification documents including US passport {US_PASSPORT} and driver's license {US_DRIVER_LICENSE} were verified prior to the procedure to ensure accurate medical record-keeping and billing processes.",
+    "During the follow-up consultation on {DATE_TIME}, {PERSON}, a {AGE}-year-old {GENDER} being treated for {MEDICAL_CONDITION}, reported improved symptoms following the prescribed regimen of {DRUG} at {DOSAGE} taken {DRUG_FREQUENCY}, while the most recent {LAB_TEST} results showed positive response to treatment, and the patient's contact information including {PHONE_NUMBER} was updated in our system for future communications.",
+    "The multidisciplinary treatment plan developed for {PERSON} on {DATE_TIME} includes ongoing management of {MEDICAL_CONDITION} through regular {MEDICAL_PROCEDURE} monitoring and administration of {DRUG} at {DOSAGE} to be taken {DRUG_FREQUENCY}, with scheduled {MEDICAL_PROCEDURE} to be performed at our {LOCATION} facility, while all financial transactions are processed through the patient's credit card {CREDIT_CARD} and verified bank account {BANK_NUMBER} for seamless billing and record-keeping purposes.",
+]
+
+THe following template covers the list of entities: [PERSON, AGE, GENDER, PHONE_NUMBER, EMAIL_ADDRESS, US_SSN, US_PASSPORT, US_DRIVER_LICENSE, BANK_NUMBER, IBAN_CODE, ORGANIZATION, CREDIT_CARD, DATE_TIME, URL, LOCATION, MEDICAL_CONDITION, LAB_TEST, DRUG, DOSAGE, DRUG_FREQUENCY, PROCEDURE]
+
+
+Healthcare Domain
+"During the admission process at {ORGANIZATION} on {DATE_TIME}, {PERSON} (DOB: {DATE_TIME}, {AGE} years old, {GENDER}) provided their insurance information including SSN {US_SSN} and emergency contact number {PHONE_NUMBER}."
+"The laboratory results for {PERSON}'s {MEDICAL_PROCEDURE} conducted on {DATE_TIME} at {LOCATION} indicate {MEDICAL_CONDITION}, and Dr. {PERSON} has prescribed {DRUG} {DOSAGE} to be taken {DRUG_FREQUENCY} with follow-up scheduled for {DATE_TIME}."
+"The detailed invoice generated on {DATE_TIME} for services rendered to {PERSON} includes charges for the recent {MEDICAL_PROCEDURE} and {LAB_TEST}, with payment authorized through credit card {CREDIT_CARD} and a portion of the amount being directly billed to the patient's bank account {BANK_NUMBER}, while the remaining balance was covered by an international wire transfer to IBAN {IBAN_CODE}.",
+
+Financial/Banking
+"A new account was opened at {ORGANIZATION} by {PERSON} (DOB: {DATE_TIME}, {GENDER}) using passport {US_PASSPORT}, with initial deposit of $10,000 transferred from bank account {BANK_NUMBER} on {DATE_TIME}."
+"Credit card application from {PERSON} (SSN: {US_SSN}) was approved on {DATE_TIME} with card number {CREDIT_CARD} linked to checking account {BANK_NUMBER}, and online banking access was set up using {EMAIL_ADDRESS}."
+"New {{AGE}}-year-old {{GENDER}} member {{PERSON}} joined on {{DATE_TIME}}. Welcome email sent to {{EMAIL_ADDRESS}}. Membership card will be mailed to {{LOCATION}}. Payment method: {{CREDIT_CARD}}. Access member portal at {{URL}}."
+E-commerce/Retail
+"Order was placed by {PERSON} on {DATE_TIME} using credit card {CREDIT_CARD}, with shipping to {LOCATION} and order confirmation sent to {EMAIL_ADDRESS}. Customer service may contact at {PHONE_NUMBER} if needed."
+"Return request processed for {PERSON} on {DATE_TIME}. Refund of $199.99 has been issued to card ending in {CREDIT_CARD}, and return shipping label was sent to {EMAIL_ADDRESS}."
+Travel/Hospitality
+"Booking confirmed for {PERSON} (Passport: {US_PASSPORT}) at {ORGANIZATION} {LOCATION} from {DATE_TIME} to {DATE_TIME}. Reservation was charged to card {CREDIT_CARD}, and e-ticket has been sent to {EMAIL_ADDRESS}."
+"Car rental agreement for {PERSON} (Driver's License: {US_DRIVER_LICENSE}) at {LOCATION} on {DATE_TIME}. Vehicle will be charged to card {CREDIT_CARD}, and rental agreement has been sent to {EMAIL_ADDRESS}."
+Employment/HR
+"New hire onboarding for {PERSON} (SSN: {US_SSN}, DOB: {DATE_TIME}, {GENDER}) was completed on {DATE_TIME}. Direct deposit has been set up with account {BANK_NUMBER}, and company email {EMAIL_ADDRESS} has been activated."
+"Background check authorization form submitted by {PERSON} (SSN: {US_SSN}) on {DATE_TIME} for position at {ORGANIZATION}. Results will be sent to HR at {EMAIL_ADDRESS} with a copy to the candidate."
+Legal/Government
+"Passport application submitted by {PERSON} (DOB: {DATE_TIME}, {GENDER}) on {DATE_TIME} at {LOCATION} using ID {US_DRIVER_LICENSE} and SSN {US_SSN}. Status updates will be sent to {EMAIL_ADDRESS}."
+"Visa application for {PERSON} (Passport: {US_PASSPORT}) was processed on {DATE_TIME}. Approval notice has been sent to {EMAIL_ADDRESS}, and the physical document will be mailed to {LOCATION}."
+Telecommunications
+"New mobile service activated for {PERSON} (SSN: {US_SSN}) with phone number {PHONE_NUMBER} on {DATE_TIME}. Monthly billing will be charged to card {CREDIT_CARD}, and account details have been sent to {EMAIL_ADDRESS}."
+"Account update processed for {PERSON} on {DATE_TIME}. New billing address updated to {LOCATION}, and confirmation has been sent to {EMAIL_ADDRESS} and {PHONE_NUMBER}."
+Insurance
+"Insurance policy issued to {PERSON} (DOB: {DATE_TIME}, {GENDER}) on {DATE_TIME} with monthly premium of $125.00 to be automatically debited from account {BANK_NUMBER}. Policy documents have been emailed to {EMAIL_ADDRESS}."
+"Claim submitted by {PERSON} on {DATE_TIME} for {MEDICAL_PROCEDURE} performed at {LOCATION} has been processed, and payment of $1,250.00 has been issued to account {BANK_NUMBER}."
+Education
+"Student application received from {PERSON} (DOB: {DATE_TIME}, {GENDER}) on {DATE_TIME}. Application fee of $75.00 was paid using card {CREDIT_CARD}, and login credentials for the student portal have been sent to {EMAIL_ADDRESS}."
+"Transcript request processed for {PERSON} on {DATE_TIME}. Official documents will be sent to {ORGANIZATION} at {LOCATION}, and confirmation has been sent to {EMAIL_ADDRESS}."
+Real Estate
+"Rental application approved for {PERSON} (SSN: {US_SSN}) at {LOCATION} on {DATE_TIME}. Security deposit of $2,000.00 was processed using card {CREDIT_CARD}, and lease agreement has been sent to {EMAIL_ADDRESS} for electronic signature."
+"Home purchase closing documents for {PERSON} (DOB: {DATE_TIME}) at {LOCATION} were signed on {DATE_TIME}. Final payment of $15,250.00 was wired from account {BANK_NUMBER}, and copies of all documents have been sent to {EMAIL_ADDRESS}."
+
+
+sentence_templates = [
+    "During the admission process at {ORGANIZATION} on {DATE_TIME}, {PERSON} (DOB: {DATE_TIME}, {AGE} years old, {GENDER}) provided their insurance information including SSN {US_SSN} and emergency contact number {PHONE_NUMBER}.",
+    "The laboratory results for {PERSON}'s {MEDICAL_PROCEDURE} conducted on {DATE_TIME} at {LOCATION} indicate {MEDICAL_CONDITION}, and Dr. {PERSON} has prescribed {DRUG} {DOSAGE} to be taken {DRUG_FREQUENCY} with follow-up scheduled for {DATE_TIME}.",
+    "The detailed invoice generated on {DATE_TIME} for services rendered to {PERSON} includes charges for the recent {MEDICAL_PROCEDURE} and {MEDICAL_PROCEDURE}, with payment authorized through credit card {CREDIT_CARD} and a portion of the amount being directly billed to the patient's bank account {BANK_NUMBER}, while the remaining balance was covered by an international wire transfer to IBAN {IBAN_CODE}.",
+    "A new account was opened at {ORGANIZATION} by {PERSON} (DOB: {DATE_TIME}, {GENDER}) using passport {US_PASSPORT}, with initial deposit of $10,000 transferred from bank account {BANK_NUMBER} on {DATE_TIME}.",
+    "Credit card application from {PERSON} (SSN: {US_SSN}) was approved on {DATE_TIME} with card number {CREDIT_CARD} linked to checking account {BANK_NUMBER}, and online banking access was set up using {EMAIL_ADDRESS}.",
+    "New {{AGE}}-year-old {{GENDER}} member {{PERSON}} joined on {{DATE_TIME}}. Welcome email sent to {{EMAIL_ADDRESS}}. Membership card will be mailed to {{LOCATION}}. Payment method: {{CREDIT_CARD}}. Access member portal at {{URL}}.",
+    "Order was placed by {PERSON} on {DATE_TIME} using credit card {CREDIT_CARD}, with shipping to {LOCATION} and order confirmation sent to {EMAIL_ADDRESS}. Customer service may contact at {PHONE_NUMBER} if needed.",
+    "Return request processed for {PERSON} on {DATE_TIME}. Refund of $199.99 has been issued to card ending in {CREDIT_CARD}, and return shipping label was sent to {EMAIL_ADDRESS}.",
+    "Booking confirmed for {PERSON} (Passport: {US_PASSPORT}) at {ORGANIZATION} {LOCATION} from {DATE_TIME} to {DATE_TIME}. Reservation was charged to card {CREDIT_CARD}, and e-ticket has been sent to {EMAIL_ADDRESS}.",
+    "Car rental agreement for {PERSON} (Driver's License: {US_DRIVER_LICENSE}) at {LOCATION} on {DATE_TIME}. Vehicle will be charged to card {CREDIT_CARD}, and rental agreement has been sent to {EMAIL_ADDRESS}.",
+    "New hire onboarding for {PERSON} (SSN: {US_SSN}, DOB: {DATE_TIME}, {GENDER}) was completed on {DATE_TIME}. Direct deposit has been set up with account {BANK_NUMBER}, and company email {EMAIL_ADDRESS} has been activated.",
+    "Background check authorization form submitted by {PERSON} (SSN: {US_SSN}) on {DATE_TIME} for position at {ORGANIZATION}. Results will be sent to HR at {EMAIL_ADDRESS} with a copy to the candidate.",
+    "Passport application submitted by {PERSON} (DOB: {DATE_TIME}, {GENDER}) on {DATE_TIME} at {LOCATION} using ID {US_DRIVER_LICENSE} and SSN {US_SSN}. Status updates will be sent to {EMAIL_ADDRESS}.",
+    "Visa application for {PERSON} (Passport: {US_PASSPORT}) was processed on {DATE_TIME}. Approval notice has been sent to {EMAIL_ADDRESS}, and the physical document will be mailed to {LOCATION}.",
+    "New mobile service activated for {PERSON} (SSN: {US_SSN}) with phone number {PHONE_NUMBER} on {DATE_TIME}. Monthly billing will be charged to card {CREDIT_CARD}, and account details have been sent to {EMAIL_ADDRESS}.",
+    "Account update processed for {PERSON} on {DATE_TIME}. New billing address updated to {LOCATION}, and confirmation has been sent to {EMAIL_ADDRESS} and {PHONE_NUMBER}.",
+    "Insurance policy issued to {PERSON} (DOB: {DATE_TIME}, {GENDER}) on {DATE_TIME} with monthly premium of $125.00 to be automatically debited from account {BANK_NUMBER}. Policy documents have been emailed to {EMAIL_ADDRESS}.",
+    "Claim submitted by {PERSON} on {DATE_TIME} for {MEDICAL_PROCEDURE} performed at {LOCATION} has been processed, and payment of $1,250.00 has been issued to account {BANK_NUMBER}.",
+    "Student application received from {PERSON} (DOB: {DATE_TIME}, {GENDER}) on {DATE_TIME}. Application fee of $75.00 was paid using card {CREDIT_CARD}, and login credentials for the student portal have been sent to {EMAIL_ADDRESS}.",
+    "Transcript request processed for {PERSON} on {DATE_TIME}. Official documents will be sent to {ORGANIZATION} at {LOCATION}, and confirmation has been sent to {EMAIL_ADDRESS}.",
+    "Rental application approved for {PERSON} (SSN: {US_SSN}) at {LOCATION} on {DATE_TIME}. Security deposit of $2,000.00 was processed using card {CREDIT_CARD}, and lease agreement has been sent to {EMAIL_ADDRESS} for electronic signature.",
+    "Home purchase closing documents for {PERSON} (DOB: {DATE_TIME}) at {LOCATION} were signed on {DATE_TIME}. Final payment of $15,250.00 was wired from account {BANK_NUMBER}, and copies of all documents have been sent to {EMAIL_ADDRESS}.",
+
 ]
