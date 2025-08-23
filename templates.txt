@@ -155,7 +155,7 @@ sentence_templates = [
 ]
 
 
-PERSON, AGE, GENDER, PHONE_NUMBER, EMAIL_ADDRESS, US_SSN, US_PASSPORT, US_DRIVER_LICENSE, BANK_NUMBER, IBAN_CODE, ORGANIZATION, CREDIT_CARD, DATE_TIME, URL, LOCATION, MEDICAL_CONDITION, LAB_TEST, DRUG, DOSAGE, DRUG_FREQUENCY, PROCEDURE
+PERSON, AGE, GENDER, PHONE_NUMBER, EMAIL_ADDRESS, US_SSN, US_PASSPORT, US_DRIVER_LICENSE, BANK_NUMBER, IBAN_CODE, ORGANIZATION, CREDIT_CARD, DATE_TIME, URL, LOCATION, MEDICAL_CONDITION, MEDICAL_PROCEDURE, DRUG, DOSAGE, DRUG_FREQUENCY
 
 sentence_templates = [
 "During the comprehensive health assessment conducted on {DATE_TIME}, {PERSON}, a {AGE}-year-old {GENDER} with a history of {MEDICAL_CONDITION}, reported experiencing persistent symptoms that required further investigation through {LAB_TEST}, while the attending physician reviewed the patient's contact information including {PHONE_NUMBER} and {EMAIL_ADDRESS} for follow-up communications.",
